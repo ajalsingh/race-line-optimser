@@ -20,7 +20,7 @@ on:
 
 jobs:
   test:
-    runs-on: macos-latest # Use macOS environment
+    runs-on: ubuntu-latest # Use Ubuntu environment
 
     steps:
     - name: Checkout Code
@@ -43,7 +43,7 @@ jobs:
   dependabot-check:
     # Ensure this runs only for Dependabot PRs
     if: github.actor == 'dependabot[bot]'
-    runs-on: macos-latest # Use macOS environment
+    runs-on: ubuntu-latest # Use Ubuntu environment
 
     steps:
     - name: Checkout Code
